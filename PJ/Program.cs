@@ -10,3 +10,29 @@ Clear();
 string[] stringA = new string[] { "hello", "2", "world", ":-)" };
 string[] stringB = new string[] { "1234", "1567", "-2", "computer science" };
 string[] stringC = new string[] { "Russia", "Denmark", "Kazan"};
+
+
+
+
+string[] Find3Symbol(string[] array)
+{
+    int size = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            size++;
+        }
+    }
+    string[] result = new string[size];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            result[j] = array[i];
+            j++;
+        }
+    }
+    return result;
+}
