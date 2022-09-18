@@ -11,8 +11,20 @@ string[] stringA = new string[] { "hello", "2", "world", ":-)" };
 string[] stringB = new string[] { "1234", "1567", "-2", "computer science" };
 string[] stringC = new string[] { "Russia", "Denmark", "Kazan"};
 
+PrintStrArr(stringA);
+Write(" -> ");
+PrintStrArr(Find3Symbol(stringA));
+WriteLine();
 
+PrintStrArr(stringB);
+Write(" -> ");
+PrintStrArr(Find3Symbol(stringB));
+WriteLine();
 
+PrintStrArr(stringC);
+Write(" -> ");
+PrintStrArr(Find3Symbol(stringC));
+WriteLine();
 
 string[] Find3Symbol(string[] array)
 {
