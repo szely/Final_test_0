@@ -36,3 +36,17 @@ string[] Find3Symbol(string[] array)
     }
     return result;
 }
+
+void PrintStrArr(string[] str)
+{
+    Write("[");
+    for (int i = 0; i < str.Length; i++)
+    {
+        Write($"\"{str[i]}\"");
+        if (i != str.Length - 1)
+        {
+            Write(",");
+        }
+    }
+    Write("]");
+}
